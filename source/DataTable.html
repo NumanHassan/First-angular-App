@@ -1,0 +1,17 @@
+<ul>
+    <li >
+         <table  width="80%" id="dataTable" align="center" name="table1">
+             <tr>
+                 <td><strong>Title</strong></td>
+                 <td><strong>Link</strong></td>
+                 <td><strong>Score</strong></td>
+             </tr>
+             <tr ng-repeat="x in names |filter:filter|orderBy:orderBy:order:order">
+
+                 <td id="title"><a  ng-href="{{ x.data.url}}">{{x.data.title}}</a></td>
+                 <td ><a ng-href="{{ x.data.url}}">Link</a></td>
+                 <td>{{x.data.score}}</td>
+             </tr>
+         </table>
+    </li>
+</ul>

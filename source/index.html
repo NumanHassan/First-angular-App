@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html ng-app="myApp" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>First Angular App</title>
+        <script src="..\bower_components/angular/angular.min.js"></script>
+        <!--<script data-main="src/main.js" src="lib/require.js"></script>-->
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="myApp.js"></script>
+        <script src="myAppCtrl.js"></script>
+    </head>
+    <body >
+        <div  ng-controller="myAppCtrl" >
+            <table id="table1" align="center">
+                <tr>
+                    <th id="headertext" colspan="2">First Angular JS App</th>
+                </tr>
+                <tr>
+                    <!--<td>Filter List</td>-->
+                    <td colspan="2">
+                        <p><input type="text" ng-model="test" class="txt" placeholder="Type something to filter the list"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp</td>
+                    <td colspan="2">
+                        <select ng-model="sortExpression" class="dropdown" id="sorting_options">
+                            <option value="">Please Select for sorting</option>
+                            <option value="data.title">Title</option>
+                            <option value="data.score">Score</option>
+                        </select>
+                        <input id="Asc" type="radio" name="order" ng-model="order" ng-value="false" />Asc  
+                        <input id="Desc" type="radio" name="order" ng-model="order" ng-value="true" />Desc
+                    </td>
+                </tr>
+            </table>
+            <div my-data remoteurl='url' filter='test' order-by='sortExpression' order='order' >
+        </div>
+        </div>
+    </body>
+</html>

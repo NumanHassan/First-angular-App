@@ -1,0 +1,102 @@
+body {
+background: #fff;
+background-image:url(background1.jpg);
+background-size: 100%;
+background-repeat: no-repeat;
+color: #222;
+padding: 0;
+margin: 0;
+font-family:"NJFont Book";
+font-weight: normal;
+font-style: normal;
+line-height: 1;
+position: relative;
+cursor: default;
+}
+
+ul {
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+
+ul li {
+padding-left: 15px;
+margin-bottom:10px;
+padding-top: 20px;
+padding-bottom: 20px;
+border-top: thin solid #E1E1E1;
+}
+
+div table {
+padding-top: 30px;
+color:#333;
+}
+
+div table tr th {
+font-size: 40px;
+font-weight: bold;
+color: #ffffff;
+font: sans-serif;
+box-shadow: none;
+}
+
+div table tr td{
+box-shadow: none;
+}
+
+ul li table{
+border-collapse: collapse;
+padding: 10px;
+box-shadow: 0 0 5px rgba(50, 50, 50, .8);
+}
+
+ul li table td  {
+border-collapse: collapse;
+padding: 10px;
+box-shadow: 0 0 5px rgba(50, 50, 50, .8);
+}
+
+ul li table td a {
+text-decoration: none;
+}
+
+ul li  a:hover {
+color:rgb(200,100,50);
+}
+
+ul li table tr:nth-child(odd) {
+background-color: #f1f1f1;
+}
+
+ul li table tr:nth-child(even) {
+background-color: #ffffff;
+}
+
+/*-------CSS Classes--------*/
+.txt{
+border: none;
+height: 35px;
+width: 400px;
+margin: 0;
+font-size: 16px;
+padding-left: 20px;
+padding-right: 17px;
+border:1px solid #CCC;
+border-radius:3px;
+font-family: "NJFont Book";
+}
+
+.dropdown{
+border: thin solid #999;
+height:35px;
+width:230px;
+font-size:14px;
+padding-left:16px;
+padding-right:10px;
+border:1px solid #CCC;
+border-radius:3px;
+margin-left:auto;
+margin-right:auto;
+margin-top: -10px;
+}
